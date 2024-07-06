@@ -8,7 +8,7 @@ const Player = ({name, symbol, isActive}) => {
         type="text" 
         value={player}
         onChange={(event) => setPlayer(event.target.value) }
-        required/> : <span>{player}</span>;
+        required/> : <span className="player-name">{player}</span>;
 
     const handleClick = () => {
         setIsEditing((prev) => !prev)
