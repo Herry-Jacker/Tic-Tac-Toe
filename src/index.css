@@ -349,3 +349,29 @@ ol {
     transform: scale(1);
   }
 }
+
+@media (max-width: 527px) {
+  #game-board button {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 631px) {
+  #players{
+    display: block;
+      li {
+      /* display: block !important; */
+      justify-content: space-between;
+      align-items: center;
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 335px) {
+  #game-board button {
+    width: 3rem;
+    height: 3rem;
+  }
+}

@@ -1,9 +1,10 @@
 import { useState } from "react";
 
-const Player = ({name, symbol, isActive}) => {
+const Player = ({name, symbol, isActive, updatePlayerName }) => {
     const [ isEditing, setIsEditing ] = useState(false);
     const [ player, setPlayer ] = useState(name);
 
+// component by condition of editting
     let PlayerName = isEditing ? <input 
         type="text" 
         value={player}
@@ -11,7 +12,8 @@ const Player = ({name, symbol, isActive}) => {
         required/> : <span className="player-name">{player}</span>;
 
     const handleClick = () => {
-        setIsEditing((prev) => !prev)
+        isEditing ? updatePlayerName(symbol, player) : null;
+        setIsEditing((prev) => !prev);
     }
 
     return (
