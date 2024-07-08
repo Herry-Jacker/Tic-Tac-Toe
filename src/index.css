@@ -354,6 +354,8 @@ ol {
   #game-board button {
     width: 4rem;
     height: 4rem;
+    font-size: 3rem;
+    padding: 0.4rem;
   }
 }
 
@@ -361,7 +363,6 @@ ol {
   #players{
     display: block;
       li {
-      /* display: block !important; */
       justify-content: space-between;
       align-items: center;
       width: 100% !important;
@@ -373,5 +374,7 @@ ol {
   #game-board button {
     width: 3rem;
     height: 3rem;
+    font-size: 2rem;
+    padding: 0.2rem;
   }
 }
